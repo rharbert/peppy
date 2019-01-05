@@ -1,8 +1,6 @@
-.container {
-	max-width: 1200px;
-	margin: 0 auto;
-}
-
+////////////////////////////////////////////////////////////////////////////////
+// Products Grid
+////////////////////////////////////////////////////////////////////////////////
 .products {
 	display: grid;
 	grid-template-columns: repeat(1, 1fr);
@@ -23,6 +21,9 @@
 	text-align: center;
 }
 
+////////////////////////////////////////////////////////////////////////////////
+// Quality Construction Grid
+////////////////////////////////////////////////////////////////////////////////
 .vid {
 	color: $gray2;
 	background-color: $blue2;
@@ -39,8 +40,7 @@
 			padding-left: 8rem;
 			padding-right: 8rem;
 		}
-	}
-	
+	}	
 	@media only screen and (min-width: $sizeML) {
 		display: flex;
 		flex-direction: row;
@@ -61,4 +61,40 @@
 			flex: 2 0 400px; 
 		}
 	}
+}
+
+////////////////////////////////////////////////////////////////////////////////
+// Articles Grid
+////////////////////////////////////////////////////////////////////////////////
+.articles {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 2rem;
+	gap: 2rem;
+}
+
+a.expand {
+  cursor: pointer;
+  color: $gold !important;
+}
+
+.article {
+  padding: .5rem;
+}
+
+.article-title {
+  margin-top: .75rem;
+  @media only screen and (min-width: $sizeL) {
+    font-size: 1.25rem;
+  }
+}
+
+.article-contents {
+  display: none;
+}
+
+div.articles h1 {
+  @media only screen and (min-width: $sizeL) {
+    margin-top: 0;
+  }
 }
