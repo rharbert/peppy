@@ -108,12 +108,14 @@ div.articles h1 {
   line-height: 3;
 }
 
-.section_header h1 {
-  margin: 3rem 0 .75rem 0;
-  text-align: center;
-  @media only screen and (min-width: $sizeL) {
-    margin-top: 3.5rem;
-  }
+.section_header {
+  h1 {
+    margin: 0 0 1rem 0;
+    text-align: center;
+    @media only screen and (min-width: $sizeL) {
+      margin-top: 3.5rem;
+    }
+  }  
 }
 
 .shop-img-button {

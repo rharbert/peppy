@@ -1,0 +1,64 @@
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.products {
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	grid-gap: 2rem;
+	gap: 2rem;
+	margin-bottom: 3rem;
+	@media only screen and (min-width: $sizeS) {
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 20px;
+		gap: 20px;
+	}
+	@media only screen and (min-width: $sizeM) {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+.product {
+	text-align: center;
+}
+
+.vid {
+	color: $gray2;
+	background-color: $blue2;
+	line-height: 1.4;
+	margin-top: 4rem;
+	margin-bottom: 4rem;
+	h1 {
+		color: $gray2;
+		padding-top: 1rem;
+	}
+	.text {
+		padding: 1.5rem;
+		@media only screen and (min-width: $sizeXL) {
+			padding-left: 8rem;
+			padding-right: 8rem;
+		}
+	}
+	
+	@media only screen and (min-width: $sizeML) {
+		display: flex;
+		flex-direction: row;
+		padding-left: 2rem;
+		padding-right: 2rem;
+		margin-top: 8rem;
+		align-items: center;
+		.text {
+			h1 {
+				margin-top: 0;
+				text-align: left;
+			}
+			ul {
+				padding-left: 0;
+			}
+		}
+		iframe {
+			flex: 2 0 400px; 
+		}
+	}
+}
