@@ -1,0 +1,127 @@
+////////////////////////////////////////////////////////////////////////////////
+// Classes and Ids
+////////////////////////////////////////////////////////////////////////////////
+.accordion {
+  display: none;
+}
+
+a.expand {
+  cursor: pointer;
+  color: $gold !important;
+}
+
+.article {
+  padding: .5rem;
+}
+
+.article-title {
+  margin-top: .75rem;
+  @media only screen and (min-width: $sizeL) {
+    font-size: 1.25rem;
+  }
+}
+
+.article-contents {
+  display: none;
+}
+
+p.collection-title {
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 2%;
+}
+
+.collection-contents {
+  text-align: center;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+div.articles h1 {
+  @media only screen and (min-width: $sizeL) {
+    margin-top: 0;
+  }
+}
+
+.expand-icon {
+  border: 2px solid gray;
+  margin-left: .5rem;
+  padding: .1rem;
+}
+
+.featured {
+  background: $gray2;
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  @media only screen and (min-width: $sizeL) {
+    margin-bottom: 4rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+}
+
+.featured-collection {
+  margin: 0 auto;
+  @media only screen and (min-width: $sizeL) {
+    max-width: 50%;
+  }
+}
+
+#featured.negate.section_header h1 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.gold {
+  color: $gold;
+}
+
+#hero-image {
+  margin-top: 4rem;
+  @media only screen and (min-width: $sizeL) {
+      margin-top: 6rem;
+  }
+}
+
+#lookbook {
+  .col {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  h1 {
+    margin-bottom: 1rem;
+    margin-top: 0;
+    font-size: 2rem;
+  }
+}
+
+.noLeftPadding {
+  padding-left: 0;
+}
+
+.padded-div {
+  padding: 0 2rem 2rem 2rem;
+}
+
+.row-tall {
+  line-height: 3;
+}
+
+.section_header h1 {
+  margin: 3rem 0 .75rem 0;
+  text-align: center;
+  @media only screen and (min-width: $sizeL) {
+    margin-top: 3.5rem;
+  }
+}
+
+.shop-img-button {
+  padding: 0;
+}
+
+#status {
+  color: red;
+  font-weight: 600;
+  margin: 1rem 0 1rem 0;
+}

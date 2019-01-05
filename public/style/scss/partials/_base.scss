@@ -1,0 +1,21 @@
+////////////////////////////////////////////////////////////////////////////////
+// Base Styles
+////////////////////////////////////////////////////////////////////////////////
+a {
+  text-decoration: none;
+  color: $gold;
+  &:hover {
+    color: $blue;
+    text-decoration: none;
+  }
+}
+
+body {
+    font-family: "Proxima Soft", sans-serif;
+    font-size: 1.1rem;
+    color: $gray;
+}
+
+img {
+  max-width: 100%;
+}

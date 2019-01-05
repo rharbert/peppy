@@ -1,0 +1,58 @@
+////////////////////////////////////////////////////////////////////////////////
+// Footer
+////////////////////////////////////////////////////////////////////////////////
+div.col-md-4 {
+  margin: 2rem 0 2rem 0;
+}
+
+div.container.col-md-8 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.fb-icon {
+  max-width: 25%;
+  @media only screen and (min-width: $sizeSM) {
+    max-width: 30%;
+  }
+  @media only screen and (min-width: $sizeL) {
+    max-width: 25%;
+  }
+}
+
+.footer {
+  margin-top: 2rem;
+  @media only screen and (min-width: $sizeSM) {
+    margin-top: 1rem;
+  }
+  @media only screen and (min-width: $sizeL) {
+    margin-top: 5rem;
+  }
+  .packaging {
+    background-color: $gray2;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    p {
+      margin-bottom: 0;
+      @media only screen and (min-width: $sizeL) {
+        padding-left: 30%;
+        padding-right: 30%;
+      }
+    } 
+    .packaging-title {
+      font-family: 'Pacifico';
+      font-size: 1.5rem;
+      color: $olive;
+    }
+  }
+}
+
+img.footer_img {
+  max-width: 50%;
+  @media only screen and (min-width: $sizeSM) {
+    max-width: 70%;
+  }
+  @media only screen and (min-width: $sizeL) {
+    max-width: 45%;
+  }
+}
