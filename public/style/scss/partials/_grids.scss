@@ -28,11 +28,11 @@
 	color: $gray2;
 	background-color: $blue2;
 	line-height: 1.4;
-	margin-top: 4rem;
-	margin-bottom: 4rem;
+	margin-bottom: 2rem;
 	h1 {
 		color: $gray2;
 		padding-top: 1rem;
+		margin-top: 1rem;
 	}
 	.text {
 		padding: 1.5rem;
@@ -64,13 +64,51 @@
 }
 
 ////////////////////////////////////////////////////////////////////////////////
-// Articles Grid
+// Tips Grid
 ////////////////////////////////////////////////////////////////////////////////
-.articles {
+.tips {
+	margin: 1rem auto;
+	max-width: 1000px;
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	grid-gap: 2rem;
 	gap: 2rem;
+	.tip {
+		padding: .75rem 2rem;
+		background-color: $gray2;
+		border: 1px solid $gold;
+		ul {
+			padding-left: 0;
+		}
+	}
+	p.tip-title {
+		text-align: left;
+		font-weight: bold;
+		font-size: 1.5rem;
+	}
+}
+
+#tips h1 {
+	@media only screen and (min-width: $sizeML) {
+	margin-top: 3rem; 
+	}
+}
+
+////////////////////////////////////////////////////////////////////////////////
+// Articles Grid
+////////////////////////////////////////////////////////////////////////////////
+.articles {
+	margin-top: 0;
+	@media only screen and (min-width: $sizeL) {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 2rem;
+		gap: 2rem;
+	}
+}
+
+#articles h1 {
+	margin-top: 3rem;
 }
 
 a.expand {
@@ -78,23 +116,16 @@ a.expand {
   color: $gold !important;
 }
 
-.article {
-  padding: .5rem;
-}
-
 .article-title {
-  margin-top: .75rem;
+	margin-top: .75rem;
+	margin-bottom: 3rem;
+	text-align: center;
   @media only screen and (min-width: $sizeL) {
-    font-size: 1.25rem;
+		margin-left: 2rem;
+		margin-right: 2rem;
   }
 }
 
 .article-contents {
   display: none;
-}
-
-div.articles h1 {
-  @media only screen and (min-width: $sizeL) {
-    margin-top: 0;
-  }
 }

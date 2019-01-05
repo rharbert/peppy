@@ -1,26 +1,6 @@
 ////////////////////////////////////////////////////////////////////////////////
 // Classes and Ids
 ////////////////////////////////////////////////////////////////////////////////
-p.collection-title {
-  font-weight: bold;
-  font-size: 1.5rem;
-  text-align: center;
-  margin-top: 2%;
-}
-
-.collection-contents {
-  text-align: center;
-  margin-left: 5%;
-  margin-right: 5%;
-}
-
-.featured-collection {
-  margin: 0 auto;
-  @media only screen and (min-width: $sizeL) {
-    max-width: 50%;
-  }
-}
-
 #featured.negate.section_header h1 {
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -32,16 +12,6 @@ p.collection-title {
 
 .row-tall {
   line-height: 3;
-}
-
-.section_header {
-  h1 {
-    margin: 0;
-    text-align: center;
-    @media only screen and (min-width: $sizeL) {
-      margin-top: 3.5rem;
-    }
-  }  
 }
 
 .shop-img-button {
