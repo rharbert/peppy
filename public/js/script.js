@@ -1,22 +1,7 @@
-//Variables
-
-
-// //Load all event listeners
-// loadEventListeners();
-//
-// //Define function for all event listeners
-// function loadEventListeners() {
-//   document.querySelector(".expand-icon").addEventListener("click", accordionExpand);
-// }
-
 //Functions Functions Functions
 
 /* Accordion Expand */
-// function accordionExpand(e) {
-//   document.querySelector(".accordion").className = "display";
-// }
 
-// The JQuery in lines 20-22 replaces the Javascript in lines 4-17.
 $(".expand-icon").on("click", function () {
   $(".accordion").toggle();
 });
@@ -26,8 +11,6 @@ $(".expand").on("click", function () {
   let contents = $(this).parent().siblings(".article-contents").html();
   $(".article-container").html(contents);
 });
-
-/* Toggle Mobile/Desktop Menu */
 
 /* Go to Top Button */
 window.onscroll = function() {scrollFunction()};
@@ -44,6 +27,26 @@ function topFunction() {
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
+/* Smooth, Slow Scroll Up and Down Page */
+$(document).ready(function(){
+    $("#link1").click(function() {
+        $path=$("#about").offset().top;
+        $("body").animate({scrollTop:$path}, 2000);
+    });
+    $("#link2").click(function() {
+        $path=$("#tips").offset().top;
+        $("body").animate({scrollTop:$path}, 2000);
+    });
+    $("#link3").click(function() {
+        $path=$("#articles").offset().top;
+        $("body").animate({scrollTop:$path}, 2000);
+    });
+    $("#link4").click(function() {
+        $path=$("#contact").offset().top;
+        $("body").animate({scrollTop:$path}, 2000);
+    });
+});
 
 /* Validate Contact Form Fields are not Blank (Client Side) */
 

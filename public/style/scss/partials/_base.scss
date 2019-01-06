@@ -27,6 +27,10 @@ h1 {
   color: $blue;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 img {
   max-width: 100%;
 }
