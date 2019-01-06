@@ -10,9 +10,14 @@
   padding-bottom: 2rem;
   p {
     color: $gray2;
+    padding-left: .5rem;
+    padding-right: .5rem;
     &.fancy {
       font-family: $fancy;
       font-size: 2rem;
+    }
+    &.label {
+      margin-bottom: .5rem;
     }
   }
 }
@@ -23,9 +28,6 @@
   }
 }
 /************************/
-
-.label {
-  margin-bottom: .5rem;}
 
 #peppy {
   margin-top: 5rem;

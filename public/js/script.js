@@ -1,15 +1,18 @@
 //Functions Functions Functions
 
-/* Accordion Expand */
+/* Toggle Article Contents */
+// $(".expand").on("click", function () {
+//   let contents = $(this).parent().siblings(".article-contents").html();
+//   $(".article-container").html(contents);
+// });
 
-$(".expand-icon").on("click", function () {
-  $(".accordion").toggle();
+/* Popups Open and Close */
+$(".open").on("click", function() {
+    $(".popup-overlay, .popup-content").addClass("active");
 });
 
-/* Toggle Article Contents */
-$(".expand").on("click", function () {
-  let contents = $(this).parent().siblings(".article-contents").html();
-  $(".article-container").html(contents);
+$(".close").on("click", function() {
+    $(".popup-overlay, .popup-content").removeClass("active");
 });
 
 /* Go to Top Button */

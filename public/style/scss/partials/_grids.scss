@@ -118,27 +118,28 @@
 // Articles Grid
 ////////////////////////////////////////////////////////////////////////////////
 .articles {
-	margin-top: 0;
+	margin: 0 1rem;
+	
 	@media only screen and (min-width: $sizeL) {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 		grid-gap: 2rem;
 		gap: 2rem;
 	}
-	a.expand {
-		cursor: pointer;
+
+	#article-container {
+		// padding: 0 2rem 1rem 2rem;
+		@media only screen and (min-width: $sizeL) {
+			padding: 0;
+		}
 	}
 	.article-title {
 		margin-top: .75rem;
-		margin-bottom: 3rem;
 		text-align: center;
 		@media only screen and (min-width: $sizeL) {
 			margin-left: 2rem;
 			margin-right: 2rem;
 		}
-	}
-	.article-contents {
-		display: none;
 	}
 }
 

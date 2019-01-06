@@ -4,6 +4,7 @@
 a {
   text-decoration: none;
   color: $gold;
+  cursor: pointer;
   &:hover {
     color: $green;
     text-decoration: none;
@@ -11,11 +12,15 @@ a {
 }
 
 body {
-    font-family: 'Varela Round', sans-serif;
+    font-family: $base;
     font-size: 1.1rem;
     color: $gray;
     margin-left: 0;
     margin-right: 0;
+}
+
+button {
+  cursor: pointer;
 }
 
 .container {
