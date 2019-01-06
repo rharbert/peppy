@@ -8,70 +8,77 @@
 
 /* Popups Open and Close */
 $(".open").on("click", function() {
-    $(".popup-overlay, .popup-content").addClass("active");
+	// let contents = $(this).siblings(".popup-content").html();
+	// let contents = $(this).parent(".popup-content").html();
+	
+	let contents = $(this).parents(".article").find(".popup-content").html();
+	
+	console.log("contents", contents);
+	// $(".popup-overlay, .popup-content").addClass("active");
+	// $(".popup-overlay").html(contents);
 });
 
 $(".close").on("click", function() {
-    $(".popup-overlay, .popup-content").removeClass("active");
+	$(".popup-overlay, .popup-content").removeClass("active");
 });
 
 /* Go to Top Button */
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        document.getElementById("goToTop").style.display = "block";
-    } else {
-        document.getElementById("goToTop").style.display = "none";
-    }
+	if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+		document.getElementById("goToTop").style.display = "block";
+	} else {
+		document.getElementById("goToTop").style.display = "none";
+	}
 }
 
 function topFunction() {
-    document.body.scrollTop = 0; // For Safari
-    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+	document.body.scrollTop = 0; // For Safari
+	document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
 /* Smooth, Slow Scroll Up and Down Page */
 $(document).ready(function(){
-    $("#link1").click(function() {
-        $path=$("#about").offset().top;
-        $("body").animate({scrollTop:$path}, 2000);
-    });
-    $("#link2").click(function() {
-        $path=$("#tips").offset().top;
-        $("body").animate({scrollTop:$path}, 2000);
-    });
-    $("#link3").click(function() {
-        $path=$("#articles").offset().top;
-        $("body").animate({scrollTop:$path}, 2000);
-    });
-    $("#link4").click(function() {
-        $path=$("#contact").offset().top;
-        $("body").animate({scrollTop:$path}, 2000);
-    });
+	$("#link1").click(function() {
+			$path=$("#about").offset().top;
+			$("body").animate({scrollTop:$path}, 2000);
+	});
+	$("#link2").click(function() {
+			$path=$("#tips").offset().top;
+			$("body").animate({scrollTop:$path}, 2000);
+	});
+	$("#link3").click(function() {
+			$path=$("#articles").offset().top;
+			$("body").animate({scrollTop:$path}, 2000);
+	});
+	$("#link4").click(function() {
+			$path=$("#contact").offset().top;
+			$("body").animate({scrollTop:$path}, 2000);
+	});
 });
 
 /* Validate Contact Form Fields are not Blank (Client Side) */
 
 function validateForm() {
-    var email =  document.getElementById('email').value;
-    if (email == "") {
-        document.getElementById('status').innerHTML = "Oops! Email cannot be empty";
-        return false;
-    } else {
-        var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-        if(!re.test(email)){
-            document.getElementById('status').innerHTML = "Oops! Email format invalid";
-            return false;
-        }
-    }
-    var message =  document.getElementById('message').value;
-    if (message == "") {
-        document.getElementById('status').innerHTML = "Oops! Message cannot be empty";
-        return false;
-    }
-    document.getElementById('status').innerHTML = "Sending...";
-    document.getElementById('formContact').submit();
+	var email =  document.getElementById('email').value;
+	if (email == "") {
+			document.getElementById('status').innerHTML = "Oops! Email cannot be empty";
+			return false;
+	} else {
+			var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+			if(!re.test(email)){
+					document.getElementById('status').innerHTML = "Oops! Email format invalid";
+					return false;
+			}
+	}
+	var message =  document.getElementById('message').value;
+	if (message == "") {
+			document.getElementById('status').innerHTML = "Oops! Message cannot be empty";
+			return false;
+	}
+	document.getElementById('status').innerHTML = "Sending...";
+	document.getElementById('formContact').submit();
 }
 
 
