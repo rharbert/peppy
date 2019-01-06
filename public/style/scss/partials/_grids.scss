@@ -79,9 +79,16 @@
 	grid-gap: 2rem;
 	gap: 2rem;
 	.tip {
-		padding: .75rem 2rem;
+		padding: 1.2rem 2rem 0 2rem;
 		border: 1px solid $gold;
 		box-shadow: -3px 0px 12px 0px #ccc, 0px -2px 12px 0px #ccc;
+		img {
+			max-width: 15%;
+			float: left;
+			display: block;
+			margin: 0 10px 10px 0;
+			shape-outside: circle(50%);
+		}
 		ul {
 			padding-left: 0;
 		}
@@ -90,6 +97,8 @@
 		text-align: left;
 		font-weight: bold;
 		font-size: 1.5rem;
+		margin-top: .5rem;
+		color: $blue;
 	}
 }
 
