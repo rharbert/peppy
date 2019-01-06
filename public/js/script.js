@@ -8,14 +8,11 @@
 
 /* Popups Open and Close */
 $(".open").on("click", function() {
-	// let contents = $(this).siblings(".popup-content").html();
-	// let contents = $(this).parent(".popup-content").html();
-	
 	let contents = $(this).parents(".article").find(".popup-content").html();
 	
 	console.log("contents", contents);
-	// $(".popup-overlay, .popup-content").addClass("active");
-	// $(".popup-overlay").html(contents);
+	$(this).parents(".article").find(".popup-overlay, .popup-content").addClass("active");
+	$(".popup-overlay").html(contents);
 });
 
 $(".close").on("click", function() {
