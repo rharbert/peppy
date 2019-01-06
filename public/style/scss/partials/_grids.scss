@@ -80,14 +80,13 @@
 	}
 	.tip {
 		padding: 1.2rem 2rem 0 2rem;
-		border: 1px solid $gold;
-		border-radius: 10px;
+		// background-color: $blue;
 		margin: 2rem;
-		// transform: scale(1) rotate(-3deg);
+		clip-path: polygon(10px 0, 100% 15px, 97% 100%, 0 97%);
+		border: 20px solid $green;
 			@media only screen and (min-width: $sizeL) {
 				margin: 0;
 			}
-		box-shadow: -3px 0px 12px 0px #ccc, 0px -2px 12px 0px #ccc;
 		img {
 			max-width: 15%;
 			float: left;
