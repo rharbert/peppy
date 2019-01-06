@@ -74,13 +74,19 @@
 .tips {
 	margin: 1rem auto;
 	max-width: 1000px;
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	grid-gap: 1rem;
-	gap: 1rem;
+	@media only screen and (min-width: $sizeL) {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 2rem;
+		gap: 2rem;
+	}
 	.tip {
 		padding: 1.2rem 2rem 0 2rem;
 		border: 1px solid $gold;
+		margin: 2rem;
+			@media only screen and (min-width: $sizeL) {
+				margin: 1rem;
+			}
 		box-shadow: -3px 0px 12px 0px #ccc, 0px -2px 12px 0px #ccc;
 		img {
 			max-width: 15%;

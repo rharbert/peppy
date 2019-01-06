@@ -13,10 +13,10 @@
   cursor: pointer;
   &:hover {
     color: white;
-    background-color: $blue;
+    background-color: $green;
   }
   &:not(:disabled):not(.disabled):active {
-    background-color: $blue2;
+    background-color: $green;
   }
 }
 
@@ -62,6 +62,6 @@
   padding: 15px;
   font-size: 18px;
   &:hover {
-    background-color: $blue;
+    background-color: $green;
   }   
 }
