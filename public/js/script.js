@@ -1,30 +1,15 @@
 //Functions Functions Functions
 
-/* Toggle Article Contents */
-// $(".expand").on("click", function () {
-//   let contents = $(this).parent().siblings(".article-contents").html();
-//   $(".article-container").html(contents);
-// });
-
 /* Popups Open and Close */
 $(".open").on("click", function() {
 	let contents = $(this).parents(".article").find(".popup-content").html();
-	
-	// console.log("contents", contents);
 	$(this).parents(".article").find(".popup-overlay").addClass("active");
-	$(".popup-overlay").html(contents);
+	$(this).parents(".article").find(".popup-overlay").html(contents);
 });
 
 $(".popup-overlay").on("click", function() {
 	$(".popup-overlay").removeClass("active");
 });
-
-// $(".close").on("click", function() {
-// 	// $(this).parents(".article").find(".popup-overlay, .popup-content.active").removeClass("active");
-// 	// let contentsClose = $(this).parents(".article").html();
-// 	// console.log("contents", contentsClose);
-// 	alert("hello");
-// });
 
 /* Go to Top Button */
 window.onscroll = function() {scrollFunction()};
