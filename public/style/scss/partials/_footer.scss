@@ -14,6 +14,14 @@
       }
     } 
   }
+  #copyright {
+    color: white;
+    background-color: $gray;
+    margin-top: 0;
+    padding-top: .2rem;
+    padding-bottom: .2rem;
+    text-align: center;
+  }
   #title {
     font-family: $fancy;
     font-size: 2rem;
@@ -21,12 +29,4 @@
     margin-bottom: 0;
     color: $green;
   }
-}
-#copyright {
-  color: white;
-  background-color: $gray;
-  margin-top: 0;
-  padding-top: .2rem;
-  padding-bottom: .2rem;
-  text-align: center;
 }

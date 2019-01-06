@@ -1,6 +1,8 @@
 ////////////////////////////////////////////////////////////////////////////////
 // Classes and Ids
 ////////////////////////////////////////////////////////////////////////////////
+
+/***** Contact Form *****/
 .contact {
   text-align: center;
   background-color: $blue2;
@@ -20,19 +22,33 @@
     margin-bottom: 1rem;
   }
 }
+/************************/
 
 .label {
-  margin-bottom: .5rem;
+  margin-bottom: .5rem;}
 
+#peppy {
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+  div {
+    text-align: center;
+  }
+  img {
+    width: 50%;
+    @media only screen and (min-width: $sizeL) {
+      width: 30%;}
+  }
+  h3 {
+    text-align: center;
+    margin-top: 0;
+  }
 }
 
 .phone-link:hover {
-  color: $green;
-}
+  color: $green;}
 
 .shop-img-button {
-  padding: 0;
-}
+  padding: 0;}
 
 #status {
   color: red;
