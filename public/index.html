@@ -152,108 +152,74 @@
       <div class="article-container" id="article-container"></div>
     </div><!-- End Articles Grid -->
  
+    <!-- Contact Form -->
+    <a class="negate" id="contact"><h1>Contact</h1></a>
+    <div class="container contact">  
+      <div class="text">
+        <p>How can we help you? We do our best to reply within <u>24 hours</u>.</p>
+      </div>
+      <div class="">
+        <div class="js-success formContact" style="color: #66CC33; font-weight: bold; display:none;">Message Received!</div>
+        <form id="formContact" name="formContact" method="post">
+          <div class="">
+            <p class="label">Name</p>
+            <input type="text" id="name" name="name" class="form-control">
+          </div>
+          <div class="">
+            <p class="label">Email (required)</p>
+            <input type="text" id="email" name="email" class="form-control">
+          </div>
+          <div class="">
+            <p class="label">Message</p>
+            <textarea type="text" id="message" name="message" rows="10" class="form-control md-textarea"></textarea>
+          </div>
+          <div class="js-success formContact" style="color: #66CC33; font-weight: bold; display:none;">Message Received!</div>
 
+          <button class="btn-primary" id="btn-contact">Send</button>
 
-      <!-- Body Section: Contact -->
-		  <div class="">
-        <a class="negate" id="contact"><h1>Contact</h1></a>
-        <section class="section">
-          <p class="text-center w-responsive mx-auto mb-5">How can we help you? We do our best to reply within <u>24 hours</u>.</p>
-          <div class="row"><!-- Contact form main row-->
-  
-          <!--Grid column: Message Fields -->
-          <div class="col-md-9 mb-md-0 mb-5">
-            <div class="js-success formContact" style="color: #669933; font-weight: bold; display:none;">Message Received!</div>
-            <form id="formContact" name="formContact" method="post">
-  
-              <!--Grid row 1-->
-              <div class="row row-tall">
-                <!--Grid column-->
-                <div class="col-md-6">
-                <div class="md-form mb-0">
-                  <input type="text" id="name" name="name" class="form-control">
-                  <label for="name" class="">Name</label>
-                </div>
-                </div><!--Grid column-->
-  
-                <!--Grid column-->
-                <div class="col-md-6">
-                <div class="md-form mb-0">
-                  <input type="text" id="email" name="email" class="form-control">
-                  <label for="email" class="">Email (required)</label>
-                </div>
-                </div><!--Grid column-->
-              </div><!--Grid row 1-->
-  
-              <!--Grid row 2-->
-              <div class="row row-tall">
-                <!--Grid column-->
-                <div class="col-md-12">
-                  <div class="md-form">
-                    <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
-                    <label for="message">Message (required)</label>
-                  </div>
-                  <div class="js-success formContact" style="color: #669933; font-weight: bold; display:none;">Message Received!</div>
-                </div>
-              </div><!--Grid row 2-->
-              <div class="text-center text-md-left">
-                <button class="btn btn-primary">Send</button>
-              </div>
-              <div id="status"></div>
-              </div><!--Grid column: Message fields -->
-            </form>
-  
-            <!--Grid column: Location and Phone -->
-            <div class="col-md-3 text-center">
-              <ul class="list-unstyled mb-0">
-              <li><i class="fa fa-map-marker fa-2x"></i>
-                <p>Our lovely earrings are crafted and shipped to you from Jacksonville, Florida USA</p>
-              </li>
-              <!-- <li><i class="fa fa-phone mt-4 fa-2x"></i>
-                <p>+ 01 904 256 9226</p>
-              </li> -->
-              </ul>
-            </div><!--Grid column: Location and Phone -->
-  
-          </div><!--Contact form main row-->
-        </section><!--Section: Contact v.2-->
-      </div><!-- End Body Section: Contact -->
+        </form>
+          <div id="status"></div>
+      </div>
 
-    </div><!-- End Body Content 2 -->
+      <div class="">
+        <p class="fancy" style="width: 25rem; margin: 0 auto;">Our lovely pillow covers are sewn and shipped to you from Florida USA</p>
+        <p><a class="phone-link" href="tel:+19042569226">(904) 256-9226</a></p>
+      </div>
+    </div><!-- End Contact Form -->
 
-	<footer>
-	  <div class="footer">
-       <!-- Sustainable Packaging -->
-       <div class="col-12 text-center packaging">
-          <p class="fancy">Sustainable Packaging</p>
-          <p>To reduce waste and show respect for our environment, we do our best to send our products to you with the least amount of packaging.</p>
+    <footer>
+      <div class="footer">
+        <!-- Sustainable Packaging -->
+        <div class="col-12 text-center packaging">
+            <p class="fancy">Sustainable Packaging</p>
+            <p>To reduce waste and show respect for our environment, we do our best to send our products to you with the least amount of packaging.</p>
+          </div>
+      <div class="container">
+            <div class="row">
+        <!-- Footer Column 1 -->
+        <div class="col-md-4 text-center">
+          <h5 class="gold"><strong>Custom Orders</strong></h5>
+          <p>Custom RLoveH earrings<br><b>only $39</b> + <u>free shipping</u></p>
+          <a class="btn btn-primary" href="#contact">Contact us</a>
         </div>
-		<div class="container">
-     		  <div class="row">
-			<!-- Footer Column 1 -->
-			<div class="col-md-4 text-center">
-			  <h5 class="gold"><strong>Custom Orders</strong></h5>
-			  <p>Custom RLoveH earrings<br><b>only $39</b> + <u>free shipping</u></p>
-			  <a class="btn btn-primary" href="#contact">Contact us</a>
-			</div>
-			  <!-- Footer Column 2 -->
-			<div class="col-md-4 text-center">
-			  <h5 class="gold"><strong>Visit Shop</strong></h5>
-			  <a href="https://www.facebook.com/pg/RLoveHBrand/shop/" style="margin: 0 auto;"><img class="fb-icon" src="images/fb-icon-pink-round.png" alt="Pink Facebook icon for RLoveH Shop"/></a>
-			</div>
-			  <!-- Footer Column 3 -->
-			<div class="col-md-4 text-center">
-			  <h5 class="gold"><strong>Our Mission</strong></h5>
-			  <p>To craft earrings that are...<br>
-				<strong>One-of-a-kind. Artistic.<br>
-				  Playful. Perfect.</strong></p>
-			  <p>&copy;2018 RLoveH</p>
-			</div>
-		  </div>
-		</div>
-	  </div>
-	</footer>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script type="text/javascript" src="js/script.js"></script>
+          <!-- Footer Column 2 -->
+        <div class="col-md-4 text-center">
+          <h5 class="gold"><strong>Visit Shop</strong></h5>
+          <a href="https://www.facebook.com/pg/RLoveHBrand/shop/" style="margin: 0 auto;"><img class="fb-icon" src="images/fb-icon-pink-round.png" alt="Pink Facebook icon for RLoveH Shop"/></a>
+        </div>
+          <!-- Footer Column 3 -->
+        <div class="col-md-4 text-center">
+          <h5 class="gold"><strong>Our Mission</strong></h5>
+          <p>To craft earrings that are...<br>
+          <strong>One-of-a-kind. Artistic.<br>
+            Playful. Perfect.</strong></p>
+          <p>&copy;2018 RLoveH</p>
+        </div>
+        </div>
+      </div>
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
   </body>
 </html>

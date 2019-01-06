@@ -8,7 +8,7 @@
   border-radius: 5px;
   margin-top: .5rem;
   margin-bottom: .5rem;
-  padding: .75rem;
+  padding: .5rem;
   font-size: 1rem;
   cursor: pointer;
   &:hover {
@@ -18,6 +18,10 @@
   &:not(:disabled):not(.disabled):active {
     background-color: $blue2;
   }
+}
+
+#button-contact:hover {
+  background-color: $gray;
 }
 
 .btn-large {
