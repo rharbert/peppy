@@ -3,9 +3,7 @@
 ////////////////////////////////////////////////////////////////////////////////
 .footer {
   .packaging {
-    padding-top: .5rem;
-    padding-bottom: 1rem;
-    background-color: $gray2;
+    padding: .5rem .5rem 1rem .5rem;
     p {
       margin-top: 0;
       margin-bottom: 0;
@@ -20,7 +18,7 @@
     font-size: 2rem;
     margin-top: 1rem;
     margin-bottom: 0;
-    color: $blue;
+    color: $green;
   }
 }
 #copyright {

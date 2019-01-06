@@ -13,15 +13,21 @@
   cursor: pointer;
   &:hover {
     color: white;
-    background-color: $blue2;
+    background-color: $blue;
   }
   &:not(:disabled):not(.disabled):active {
     background-color: $blue2;
   }
 }
 
-#button-contact:hover {
-  background-color: $gray;
+#btn-contact {
+  font-weight: bold;
+  padding-left: 1rem;
+  padding-right: 1rem; 
+  text-transform: uppercase; 
+  &:hover {
+    background-color: $green;
+  }
 }
 
 .btn-large {
@@ -31,9 +37,9 @@
   margin: 0 auto;
   width: 100%;
   background-color: $blue;
-  @media only screen and (min-width: $sizeL) {
-      font-size: 2rem;
-  }
+  // @media only screen and (min-width: $sizeL) {
+  //     font-size: 2rem;
+  // }
   &a:hover {
     background-color: $gold;
   }

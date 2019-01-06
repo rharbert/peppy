@@ -31,7 +31,7 @@
 	margin-bottom: 2rem;
 	h1 {
 		color: $gray2;
-		padding-top: 1rem;
+		// padding-top: 1rem;
 		margin-top: 1rem;
 	}
 	iframe {
@@ -76,8 +76,8 @@
 	max-width: 1000px;
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
-	grid-gap: 2rem;
-	gap: 2rem;
+	grid-gap: 1rem;
+	gap: 1rem;
 	.tip {
 		padding: 1.2rem 2rem 0 2rem;
 		border: 1px solid $gold;
@@ -127,7 +127,6 @@
 
 a.expand {
   cursor: pointer;
-  color: $gold !important;
 }
 
 .article-title {

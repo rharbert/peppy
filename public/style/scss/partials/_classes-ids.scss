@@ -7,7 +7,11 @@
   padding-top: 1rem;
   padding-bottom: 2rem;
   p {
-    color: white;
+    color: $gray2;
+    &.fancy {
+      font-family: $fancy;
+      font-size: 2rem;
+    }
   }
 }
 
@@ -17,12 +21,9 @@
   }
 }
 
-.gold {
-  color: $gold;
-}
-
 .label {
   margin-bottom: .5rem;
+
 }
 
 .phone-link:hover {

@@ -24,8 +24,18 @@ body {
 h1 {
   text-align: center;
   margin-top: 0;
+  color: $blue;
 }
 
 img {
   max-width: 100%;
+}
+
+input,
+textarea {
+  width: 90%;
+  line-height: 2;
+  @media only screen and (min-width: $sizeL) {
+  width: 50%;  
+  }
 }
