@@ -9,6 +9,9 @@ footer {
     padding-top: .2rem;
     padding-bottom: .2rem;
     text-align: center;
+    img {
+      padding-top: .5rem;
+    }
   }
 }
 
@@ -32,4 +35,18 @@ footer {
     margin-bottom: 0;
     color: $green;
   }
+}
+
+////////////////////////////////////////////////////////////////////////////////
+// Footer Grid
+////////////////////////////////////////////////////////////////////////////////
+#copyright {
+	@media only screen and (min-width: $sizeXS) {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		div {
+			padding: .25rem 1.5rem;
+		}
+	}
 }

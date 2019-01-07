@@ -157,19 +157,3 @@
 	margin-top: 3rem;
 }
 
-////////////////////////////////////////////////////////////////////////////////
-// Footer Grid
-////////////////////////////////////////////////////////////////////////////////
-#copyright {
-	img {
-		padding-top: .5rem;
-	}
-	@media only screen and (min-width: $sizeXS) {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		div {
-			padding: .25rem 1.5rem;
-		}
-	}
-}
