@@ -1,6 +1,20 @@
 //Functions Functions Functions
 
-/* Popups Open and Close */
+////////////////////////////////////////////////////////////////////////////////
+// Product Popups
+////////////////////////////////////////////////////////////////////////////////
+$(".open").on("click", function() {
+	let contents = $(this).siblings(".details").html();
+	$("#popup-overlay, #popup-overlay .popup-content").addClass("active");
+	$("#popup-overlay .popup-content").html(contents);
+});
+
+$("#popup-overlay").on("click", function() {
+	$("#popup-overlay, #popup-overlay .popup-content").removeClass("active");
+});
+////////////////////////////////////////////////////////////////////////////////
+// Article Popups
+////////////////////////////////////////////////////////////////////////////////
 $(".open").on("click", function() {
 	let contents = $(this).parents(".article").find(".popup-content").html();
 	$(this).parents(".article").find(".popup-overlay").addClass("active");
@@ -11,7 +25,9 @@ $(".popup-overlay").on("click", function() {
 	$(".popup-overlay").removeClass("active");
 });
 
-/* Go to Top Button */
+////////////////////////////////////////////////////////////////////////////////
+// GoToTop Button
+////////////////////////////////////////////////////////////////////////////////
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
@@ -27,7 +43,9 @@ function topFunction() {
 	document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
-/* Smooth, Slow Scroll Up and Down Page */
+////////////////////////////////////////////////////////////////////////////////
+// Smooth, Slow Scroll Up and Down Page
+////////////////////////////////////////////////////////////////////////////////
 $(document).ready(function(){
 	$("#link1").click(function() {
 			$path=$("#about").offset().top;
@@ -47,8 +65,9 @@ $(document).ready(function(){
 	});
 });
 
-/* Validate Contact Form Fields are not Blank (Client Side) */
-
+////////////////////////////////////////////////////////////////////////////////
+// Validate Contact Form Fields are not Blank (Client Side)
+////////////////////////////////////////////////////////////////////////////////
 function validateForm() {
 	var email =  document.getElementById('email').value;
 	if (email == "") {

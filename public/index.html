@@ -25,7 +25,7 @@
         <a id="link3"href="#articles">Articles</a>
         <a id="link4"href="#contact">Contact</a>
       </nav>
-    </header>
+    </header><!-- End Header and Nav -->
 
     <!-- Back to Top Button-->
     <button onclick="topFunction()" id="goToTop" title="Go to top">Top</button>
@@ -34,59 +34,77 @@
     <div class="container products" id="products">
       <!-- Product 1 -->
       <div class="col product">
-      <img src="images/placeholder-pillow.jpg"  alt="Pillow description" />
-      <a class="btn-primary">Details</a>
-      <a class="btn-primary">Add to cart</a>
+        <img src="images/placeholder-pillow.jpg"  alt="Pillow description" />
+        <a class="btn-primary open">Details</a>
+        <a class="btn-primary">Add to cart</a>
+        
+        <div class="details" id="001">
+          <img src="images/placeholder-pillow.jpg"  alt="Pillow description" />
+          <div class="info">
+            <h2>Product Title</h2>
+            <p>Product 1 details</p>
+          </div>
+        </div>
       </div><!-- End Product 1 -->
       <!-- Product 2 -->
       <div class="col product">
         <img src="images/placeholder-pillow.jpg"  alt="Pillow description" />
-        <a class="btn-primary">Details</a>
+        <a class="btn-primary open">Details</a>
         <a class="btn-primary">Add to cart</a>
       </div><!-- End Product 2 -->
       <!-- Product 3 -->
       <div class="col product">
         <img src="images/placeholder-pillow.jpg"  alt="Pillow description" />
-        <a class="btn-primary">Details</a>
+        <a class="btn-primary open">Details</a>
         <a class="btn-primary">Add to cart</a>
       </div><!-- End Product 3 -->
       <!-- Product 4 -->
       <div class="col product">
         <img src="images/placeholder-pillow.jpg"  alt="Pillow description" />
-        <a class="btn-primary">Details</a>
+        <a class="btn-primary open">Details</a>
         <a class="btn-primary">Add to cart</a>
       </div><!-- End Product 4 -->
       <!-- Product 5 -->
       <div class="col product">
         <img src="images/placeholder-pillow.jpg"  alt="Pillow description" />
-        <a class="btn-primary">Details</a>
+        <a class="btn-primary open">Details</a>
         <a class="btn-primary">Add to cart</a>
       </div><!-- End Product 5 -->
       <!-- Product 6 -->
       <div class="col product">
         <img src="images/placeholder-pillow.jpg"  alt="Pillow description" />
-        <a class="btn-primary">Details</a>
+        <a class="btn-primary open">Details</a>
         <a class="btn-primary">Add to cart</a>
       </div><!-- End Product 6 -->
       <!-- Product 7 -->
       <div class="col product">
         <img src="images/placeholder-pillow.jpg"  alt="Pillow description" />
-        <a class="btn-primary">Details</a>
+        <a class="btn-primary open">Details</a>
         <a class="btn-primary">Add to cart</a>
       </div><!-- End Product 7 -->
       <!-- Product 8 -->
       <div class="col product">
         <img src="images/placeholder-pillow.jpg"  alt="Pillow description" />
-        <a class="btn-primary">Details</a>
+        <a class="btn-primary open">Details</a>
         <a class="btn-primary">Add to cart</a>
       </div><!-- End Product 8 -->
       <!-- Product 9 -->
       <div class="col product">
         <img src="images/placeholder-pillow.jpg"  alt="Pillow description" />
-        <a class="btn-primary">Details</a>
+        <a class="btn-primary open">Details</a>
         <a class="btn-primary">Add to cart</a>
       </div><!-- End Product 9 -->
+      
+      <!-- Product Popup Body -->
+      <div id="popup-overlay">
+        <a class="close">Close</a> <!-- Popup close -->  
+        <!-- Product Popup Content -->
+        <div class="popup-content">   
+        </div>
+      </div><!-- End Product Popup -->
+    
     </div><!-- End Products Grid -->
+
 
     <!-- Meet Peppy the Hedgehog -->
     <div class="container" id="peppy">
@@ -94,6 +112,7 @@
       <h3>He loves to get cozy on his pillow</h3>
       <div><img src="images/mascot-peppypillows-peppy-the-hedgehog.svg" alt="Photo of Peppy the hedgehog enjoying his soft pillow"/></div>
     </div><!-- End Meet Peppy -->
+
 
     <!-- Grid: Quality Construction -->
     <div class="vid" id="about">
@@ -111,6 +130,7 @@
           <iframe width="560" height="315" src="https://www.youtube.com/embed/4LJnPEvjdDo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
     </div><!-- End Quality Construction -->
+
 
     <!-- Grid: Buying and Care Tips -->
     <a class="negate" id="tips"><h1>Buying & Care Tips</h1></a>
@@ -135,6 +155,7 @@
           </ul>
         </div>
     </div><!-- End Tips -->
+
 
     <!-- Grid: Articles -->
     <a class="negate" id="articles"><h1>Articles</h1></a>
@@ -195,6 +216,7 @@
 
     </div><!-- End Articles Grid -->
 
+
     <!-- Contact Form -->
     <a class="negate" id="contact"><h1>Contact</h1></a>
     <div class="container contact">  
@@ -230,6 +252,7 @@
       </div>
     </div><!-- End Contact Form -->
 
+    <!-- Footer -->
     <footer>
       <div class="container footer">
         <!-- Sustainable Packaging -->
@@ -248,7 +271,8 @@
           </div>
         </div>
 
-    </footer>
+    </footer><!-- End Footer -->
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
   </body>

@@ -5,15 +5,16 @@
 ////////////////////////////////////////////////////////////////////////////////
 // Article Popups
 ////////////////////////////////////////////////////////////////////////////////
-.popup-overlay {
+.popup-overlay,
+#popup-overlay {
 	visibility:hidden;
 	position: absolute;
 	background: white;
-	border: 2px solid $gray;
-	width: 50%;
+	border: 1px solid $green;
+	width: 90%;
 	height: auto;
-	left: 25%;
-	padding: .5rem;
+	left: 1%;
+	padding: 1rem;
 	text-align: left;
 	&.active {
 		visibility: visible;
@@ -21,15 +22,22 @@
 		a.close {
 			color: white;
 			font-family: $base;
-			background-color: $blue2;
+			background-color: $green;
+			text-align: center;
 			border: none;
 			padding: .5rem;
 			display: block;
-			text-align: center;
-			margin-bottom: .5rem;
+			width: 5%;
+			margin: 0 auto;
 			&:hover {
-				background-color: $green;
+				background-color: $gold;
 			}
+		}
+		img {
+			margin-top: 1rem;
+		}
+		div.info {
+			margin: 0 auto;
 		}
 	}
 }
@@ -38,6 +46,8 @@
 	visibility:hidden;
 	&.active {
 		visibility: visible;
+		display: flex;
+		align-items: center;
 	}
 }
 
