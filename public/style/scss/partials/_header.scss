@@ -38,11 +38,16 @@ header {
 ////////////////////////////////////////////////////////////////////////////////
 // Header Grid
 ////////////////////////////////////////////////////////////////////////////////
-.cart-logo {
-  color: $green;
-  flex-shrink: 0;
-  img {
-    width: 30%;
-
+#snipcart-wrapper {
+  text-align: center;
+  .cart-logo {
+    color: $green;
+    flex-shrink: 0;
+    img {
+      width: 20%;
+      // @media only screen and (min-width: $sizeM) {
+      //   width: 30%;
+      // }
+    }
   }
 }
