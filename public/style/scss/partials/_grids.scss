@@ -86,10 +86,10 @@
 		gap: 2rem;
 	}
 	.tip {
-		&:nth-child(odd) {
-			clip-path: polygon(10px 0, 100% 15px, 97% 100%, 0 97%);
-			border: 20px solid $green;
-		}
+		// &:nth-child(odd) {
+		// 	clip-path: polygon(10px 0, 100% 15px, 97% 100%, 0 97%);
+		// 	border: 20px solid $green;
+		// }
 		&:nth-child(even) {
 			clip-path: polygon(10px 0, 100% 15px, 97% 100%, 0 97%);
 			border: 20px solid $green;
@@ -107,9 +107,9 @@
 			margin: 0 10px 10px 0;
 			shape-outside: circle(50%);
 		}
-		ul {
-			padding-left: 0;
-		}
+	}
+	#tip3 {
+		grid-column: 1 / 4;
 	}
 	p.tip-title {
 		text-align: left;
