@@ -7,9 +7,9 @@
 	position: absolute;
 	background: white;
 	border: 1px solid $green;
-	width: 90%;
+	width: 50%;
 	height: auto;
-	left: 1%;
+	left: 25%;
 	padding: 1rem;
 	text-align: left;
 	&.active {
@@ -29,11 +29,21 @@
 				background-color: $gold;
 			}
 		}
-		img {
-			margin-top: 1rem;
+		.content-img {
+			float: right;
+			display: block;
+			margin: 0 .5rem .5rem 1rem;
+			width: 50%;
+		}
+		h2 {
+			text-align: center;
 		}
 		.info {
 			margin: 0 auto;
+		}
+		.opening-img {
+			margin-top: 1rem;
+			text-align: center;
 		}
 	}
 }
