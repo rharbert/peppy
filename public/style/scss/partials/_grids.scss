@@ -41,6 +41,9 @@
 			width: 100%;
 		}		
 	}
+	strong {
+		color: $green;
+	}
 	.text {
 		padding: 1.5rem;
 		@media only screen and (min-width: $sizeXL) {
