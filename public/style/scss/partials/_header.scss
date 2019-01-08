@@ -6,53 +6,55 @@ header {
   #logo-cart {
     display: flex;
     align-items: center;
-    // justify-content: space-between;
   }
   nav {
     display: flex;
-    @media only screen and (max-width: $sizeXXS) {
-      flex-direction: column;
-    }
     justify-content: center;
     align-items: center;
     text-align: center;
     margin-bottom: .5rem;
-      a {
-        text-decoration: none;
-        color: $gold;
-        margin-left: .5rem;
-        margin-right: .5rem;
-        font-size: 1rem;
-        &:hover {
-          color: $blue;
-        }
+    @media only screen and (max-width: $sizeXXS) {
+      flex-direction: column;
+    }
+    a {
+      text-decoration: none;
+      color: $gold;
+      margin-left: .5rem;
+      margin-right: .5rem;
+      font-size: 1rem;
+      &:hover {
+        color: $blue;
       }
+    }
   }
   #tagline-nav {
     text-align: center;
+    @media only screen and (min-width: $sizeL) {
+      order: 2;
+    }
     p {
-      margin-top: 0;
-      margin-bottom: .5rem;
-      color: $gray;
-      // font-size: 2rem;
-      // font-family: $fancy;
+      font-family: $fancy;
+      margin-bottom: 1rem;
+      color: $gray3;
+      font-size: 2rem;
+      line-height: 1;
+      @media only screen and (min-width: $sizeM) {
+        margin-top: 0;
+      }
     }
   }
 }
 
 ////////////////////////////////////////////////////////////////////////////////
-// Header Grid
+// Snipcart in Header
 ////////////////////////////////////////////////////////////////////////////////
 #snipcart-wrapper {
   text-align: center;
+  margin-right: 1rem;
   .cart-logo {
     color: $green;
     flex-shrink: 0;
     img {
-      width: 20%;
-      // @media only screen and (min-width: $sizeM) {
-      //   width: 30%;
-      // }
-    }
+      width: 20%;}
   }
 }
