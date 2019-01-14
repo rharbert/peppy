@@ -16,13 +16,11 @@ $("#popup-overlay").on("click", function() {
 // Article Popups
 ////////////////////////////////////////////////////////////////////////////////
 $(".open").on("click", function() {
-	let contents = $(this).parents(".article").find(".popup-content").html();
-	$(this).parents(".article").find(".popup-overlay").addClass("active");
-	$(this).parents(".article").find(".popup-overlay").html(contents);
+	$(this).parents(".article").find(".popup-overlay_article").addClass("active");
 });
 
-$(".popup-overlay").on("click", function() {
-	$(".popup-overlay").removeClass("active");
+$(".popup-overlay_article").on("click", function() {
+	$(".popup-overlay_article").removeClass("active");
 });
 
 ////////////////////////////////////////////////////////////////////////////////

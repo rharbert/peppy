@@ -1,15 +1,15 @@
 ////////////////////////////////////////////////////////////////////////////////
-// Product & Article Popups
+// Product Popups
 ////////////////////////////////////////////////////////////////////////////////
 .popup-overlay,
 #popup-overlay {
-	visibility:hidden;
+	visibility: hidden;
 	position: absolute;
 	background: white;
 	border: 1px solid $green;
-	width: 50%;
+	width: 70%;
 	height: auto;
-	left: 25%;
+	left: 10%;
 	padding: 1rem;
 	text-align: left;
 	&.active {
@@ -49,11 +49,61 @@
 }
 
 .popup-content {
-	visibility:hidden;
+	visibility: hidden;
 	&.active {
 		visibility: visible;
 		display: flex;
 		align-items: center;
 	}
+}
+
+////////////////////////////////////////////////////////////////////////////////
+// Article Popups
+////////////////////////////////////////////////////////////////////////////////
+.popup-overlay_article {
+	display: none;
+	position: absolute;
+	background: white;
+	border: 1px solid $green;
+	width: 70%;
+	height: auto;
+	left: 10%;
+	padding: 1rem;
+	text-align: left;
+	&.active {
+		display: block;
+		margin: 0 1rem 1rem 1rem;
+		a.close {
+			color: white;
+			font-family: $base;
+			background-color: $green;
+			text-align: center;
+			border: none;
+			padding: .5rem;
+			display: block;
+			width: 5%;
+			margin: 0 auto;
+			&:hover {
+				background-color: $gold;
+			}
+		}
+		.content-img {
+			float: right;
+			display: block;
+			margin: 0 .5rem .75rem 1.5rem;
+			width: 50%;
+		}
+		h2 {
+			text-align: center;
+		}
+		.info {
+			margin: 0 auto;
+		}
+		.opening-img {
+			margin-top: 1rem;
+			text-align: center;
+		}
+	}
+
 }
 
