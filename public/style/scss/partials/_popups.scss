@@ -3,7 +3,7 @@
 ////////////////////////////////////////////////////////////////////////////////
 #popup-overlay {
 	visibility: hidden;
-	position: absolute;
+	position: fixed;
 	background: white;
 	border: 2px solid $green;
 	width: 70%;
