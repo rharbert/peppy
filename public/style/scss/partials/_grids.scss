@@ -38,8 +38,7 @@
 	}
 	iframe {
 		@media only screen and (max-width: $sizeM) {
-			width: 100%;
-		}		
+			width: 100%;}		
 	}
 	strong {
 		color: $green;
@@ -90,16 +89,14 @@
 		// 	clip-path: polygon(10px 0, 100% 15px, 97% 100%, 0 97%);
 		// 	border: 20px solid $green;
 		// }
-		&:nth-child(even) {
-			clip-path: polygon(10px 0, 100% 15px, 97% 100%, 0 97%);
-			border: 20px solid $green;
-		}
+		// &:nth-child(even) {
+		// 	clip-path: polygon(10px 0, 100% 15px, 97% 100%, 0 97%);
+		// 	border: 20px solid $green;
+		// }
 		padding: 1.2rem 2rem 0 2rem;
-		// background-color: $blue;
 		margin: 2rem;
 		@media only screen and (min-width: $sizeL) {
-			margin: 0;
-		}
+			margin: 0;}
 		img {
 			max-width: 15%;
 			float: left;
@@ -108,8 +105,16 @@
 			shape-outside: circle(50%);
 		}
 	}
+	#tip1 {
+		clip-path: polygon(10px 0, 100% 15px, 98% 100%, 0 97%);
+		border: 20px solid $green;
+	}
 	#tip3 {
 		grid-column: 1 / 4;
+		img {
+			@media only screen and (min-width: $sizeL) {
+			max-width: 7%;}
+		}
 	}
 	p.tip-title {
 		text-align: left;
@@ -122,8 +127,7 @@
 
 #tips h1 {
 	@media only screen and (min-width: $sizeML) {
-	margin-top: 3rem; 
-	}
+	margin-top: 3rem;}
 }
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -143,8 +147,7 @@
 	#article-container {
 		// padding: 0 2rem 1rem 2rem;
 		@media only screen and (min-width: $sizeL) {
-			padding: 0;
-		}
+			padding: 0;}
 	}
 	.article-title {
 		margin-top: .75rem;
