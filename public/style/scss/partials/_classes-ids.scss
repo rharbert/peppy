@@ -42,7 +42,14 @@
   }
   h3 {
     text-align: center;
-    margin-top: 0;
+    width: 60%;
+    margin: 0 auto;
+    span {
+      color: $green;
+      u {
+        text-decoration: none;
+      }
+    }
   }
 }
 
