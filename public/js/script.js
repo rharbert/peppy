@@ -3,19 +3,19 @@
 ////////////////////////////////////////////////////////////////////////////////
 // Product Popups
 ////////////////////////////////////////////////////////////////////////////////
-$(".open").on("click", function() {
+$(".open_product").on("click", function() {
 	let contents = $(this).siblings(".details").html();
-	$("#popup-overlay, #popup-overlay .popup-content").addClass("active");
-	$("#popup-overlay .popup-content").html(contents);
+	$("#popup-overlay, #popup-overlay #popup-content").addClass("active");
+	$("#popup-overlay #popup-content").html(contents);
 });
 
 $("#popup-overlay").on("click", function() {
-	$("#popup-overlay, #popup-overlay .popup-content").removeClass("active");
+	$("#popup-overlay, #popup-overlay #popup-content").removeClass("active");
 });
 ////////////////////////////////////////////////////////////////////////////////
 // Article Popups
 ////////////////////////////////////////////////////////////////////////////////
-$(".open").on("click", function() {
+$(".open_article").on("click", function() {
 	$(this).parents(".article").find(".popup-overlay_article").addClass("active");
 });
 

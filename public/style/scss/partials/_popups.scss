@@ -1,20 +1,17 @@
 ////////////////////////////////////////////////////////////////////////////////
 // Product Popups
 ////////////////////////////////////////////////////////////////////////////////
-.popup-overlay,
 #popup-overlay {
 	visibility: hidden;
 	position: absolute;
 	background: white;
-	border: 1px solid $green;
+	border: 2px solid $green;
 	width: 70%;
 	height: auto;
-	left: 10%;
+	left: 15%;
 	padding: 1rem;
-	text-align: left;
 	&.active {
 		visibility: visible;
-		margin: 0 1rem 1rem 1rem;
 		a.close {
 			color: white;
 			font-family: $base;
@@ -23,37 +20,34 @@
 			border: none;
 			padding: .5rem;
 			display: block;
-			width: 5%;
 			margin: 0 auto;
 			&:hover {
 				background-color: $gold;
 			}
-		}
-		.content-img {
-			float: right;
-			display: block;
-			margin: 0 .5rem .5rem 1rem;
-			width: 50%;
-		}
-		h2 {
-			text-align: center;
-		}
-		.info {
-			margin: 0 auto;
-		}
-		.opening-img {
-			margin-top: 1rem;
-			text-align: center;
+			@media only screen and (min-width: $sizeSM) {
+				width: 20%;}
+			@media only screen and (min-width: $sizeL) {
+				width: 10%;}
 		}
 	}
 }
 
-.popup-content {
+#popup-content {
 	visibility: hidden;
+	text-align: center;
 	&.active {
 		visibility: visible;
-		display: flex;
-		align-items: center;
+		@media only screen and (min-width: $sizeL) {
+			display: flex;
+			align-items: center;
+		}
+	}
+	.info {
+		text-align: left;
+		margin-left: 1rem;
+		@media only screen and (min-width: $sizeL) {
+			margin-left: 2rem;
+		}
 	}
 }
 
@@ -64,10 +58,10 @@
 	display: none;
 	position: absolute;
 	background: white;
-	border: 1px solid $green;
-	width: 70%;
+	border: 2px solid $green;
+	width: 50%;
 	height: auto;
-	left: 10%;
+	left: 15%;
 	padding: 1rem;
 	text-align: left;
 	&.active {
@@ -81,11 +75,14 @@
 			border: none;
 			padding: .5rem;
 			display: block;
-			width: 5%;
 			margin: 0 auto;
 			&:hover {
 				background-color: $gold;
 			}
+			@media only screen and (min-width: $sizeSM) {
+				width: 20%;}
+			@media only screen and (min-width: $sizeL) {
+				width: 10%;}
 		}
 		.content-img {
 			float: right;
@@ -104,6 +101,5 @@
 			text-align: center;
 		}
 	}
-
 }
 
